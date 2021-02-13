@@ -2,10 +2,18 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: black;
+    color: white;
 }
 .header{
     width: 80%;
     margin: auto;
+}
+.profile-image{
+    border: 1px solid #ffcc00;
+}
+#skills{
+    color: black;
 }
 
 
@@ -96,6 +104,7 @@ body{
     position: absolute;
     top: 0;
     right: 10px;
+    color: black;
     bottom: 0
 }
 
@@ -105,6 +114,7 @@ body{
     font-size: 16px;
     text-align: center;
     margin: auto;
+    color: black;
     z-index: 1
 }
 
