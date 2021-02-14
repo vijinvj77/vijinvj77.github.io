@@ -25,7 +25,7 @@
           <a class="nav-item nav-link active" href="#about">About<span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#education">Education</a>
           <a class="nav-item nav-link" href="#skills">Skills</a>
-          <a class="nav-item nav-link" href="#projects">Certifications</a>
+          <a class="nav-item nav-link" href="#certifications">Certifications</a>
         </div>
       </div>
     </nav>
@@ -106,10 +106,8 @@
             </p>
           </div>
         </div>
-
       </div>
     </div>
-
   </section>
 
   <section id="skills">
@@ -141,10 +139,6 @@
             </div>
           </div>
         </div>
-
-
-
-
       </div>
       <!-- second row of skills -->
       <div class="row">
@@ -210,43 +204,61 @@
     <h3 class="text-center text-warning mt-4">Certifications</h3>
     <div class="container mt-4">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 p-2 mr-auto ml-auto">
           <img src="Images/Java-Certificate.jpg" alt="Java-Certificate" class="img-fluid" />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 p-2 mr-auto ml-auto">
           <img src="Images/MySQL-Certificate.jpg" alt="MySQL-Certificate" class="img-fluid" />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 p-2 mr-auto ml-auto">
           <img src="Images/DSA-Certificate.jpg" alt="Data Structures and Algorithm-Certificate" class="img-fluid" />
         </div>
       </div>
     </div>
   </section>
-
-  <div class="container">
-    <form id="submit-form" action="">
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputName">Name</label>
-          <input type="text" class="form-control" id="inputName" name="inputName">
+  <section id="contact">
+    <h3 class="text-center text-warning mt-4">Contact</h3>
+    <div class="container mt-4">
+      <form id="submit-form" action="">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName" name="inputName">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPhoneNumber">Phone Number</label>
+            <input type="number" class="form-control" id="inputPhoneNumber" name="inputPhoneNumber">
+          </div>
         </div>
-        <div class="form-group col-md-6">
-          <label for="inputPhoneNumber">Phone Number</label>
-          <input type="number" class="form-control" id="inputPhoneNumber" name="inputPhoneNumber">
+        <div class="form-group">
+          <label for="inputEmail">E-mail</label>
+          <input type="email" class="form-control" id="inputEmail" name="inputEmail">
         </div>
-      </div>
-      <div class="form-group">
-        <label for="inputEmail">E-mail</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="123@mail.com" name="inputEmail">
-      </div>
-      <div class="form-group">
-        <label for="inputMessage">Message</label>
-        <textarea class="form-control" style="height: 10rem;" name="inputMessage"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
+        <div class="form-group">
+          <label for="inputMessage">Message</label>
+          <textarea class="form-control" style="height: 10rem;" name="inputMessage"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary" style="width: 20rem;">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
 
+  <footer class="bg-warning mt-4 text-center">
+    <a href="https://www.facebook.com/vijin.vj.12/"><i class="fab fa-facebook-square p-2"></i></a>
+          <a href="https://www.instagram.com/iam_vj_77/"><i class="fab fa-instagram-square p-2"></i></a>
+          <a href="https://www.linkedin.com/in/vijinvj"><i class="fab fa-linkedin p-2"></i></a>
+          <a href="https://vijinvj77.github.io/CS-Life-Blogs/index.html"><i class="fab fa-blogger p-2"></i></a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/33f936a4b3.js" crossorigin="anonymous"></script>
   <script>
     $("#submit-form").submit((e) => {
       e.preventDefault()
@@ -256,29 +268,17 @@
         method: "post",
         success: function (response) {
           alert("Form submitted successfully")
-          window.location.reload()
-          //window.location.href="https://google.com"
+
+          window.location.href = "index.html"
         },
         error: function (err) {
           alert("Something Error")
+          window.location.href = "index.html"
 
         }
       })
     })
   </script>
-
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/33f936a4b3.js" crossorigin="anonymous"></script>
 
 
 
