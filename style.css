@@ -24,7 +24,7 @@ header{
 #skills{
     color: black;
 }
-.row{
+#skills .row{
     margin-top: 20px;
 }
 
@@ -285,10 +285,10 @@ header{
         width: 100%;
         margin: 0;
     }
-    .row{
+    #skills .row{
         margin: 0px 10px 0px 10px;
     }
-    .card{
+    #skills .card{
         margin: 10px;
         padding: 0px;
     }

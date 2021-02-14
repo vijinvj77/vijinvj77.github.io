@@ -222,35 +222,52 @@
       </div>
     </div>
   </section>
-  <section id="contact">
-    <h3 class="text-center text-warning mt-4">Contact</h3>
-    <div class="container text-white mt-4">
-      <form id="submit-form" action="">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputName">Name</label>
-            <input type="text" class="form-control" id="inputName">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPhoneNumber">Phone Number</label>
-            <input type="number" class="form-control" id="inputPhoneNumber">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputEmail">E-mail</label>
-          <input type="email" class="form-control" id="inputEmail" placeholder="123@mail.com">
-        </div>
-        <div class="form-group">
-          <label for="inputMessage">Message</label>
-          <textarea class="form-control" style="height: 10rem;"></textarea>
-        </div>
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary" style="width: 20rem;">Submit</button>
-        </div>
-      </form>
-    </div>
 
-  </section>
+  <div class="container">
+    <form id="submit-form" action="">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputName">Name</label>
+          <input type="text" class="form-control" id="inputName" name="inputName">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPhoneNumber">Phone Number</label>
+          <input type="number" class="form-control" id="inputPhoneNumber" name="inputPhoneNumber">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail">E-mail</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="123@mail.com" name="inputEmail">
+      </div>
+      <div class="form-group">
+        <label for="inputMessage">Message</label>
+        <textarea class="form-control" style="height: 10rem;" name="inputMessage"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    $("#submit-form").submit((e) => {
+      e.preventDefault()
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbwWtoHeT1PQsqVp8mBoOdTvNmxhoSYYvrg51_e9xQdXp7kPJGqrJVJvZA/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function (response) {
+          alert("Form submitted successfully")
+          window.location.reload()
+          //window.location.href="https://google.com"
+        },
+        error: function (err) {
+          alert("Something Error")
+
+        }
+      })
+    })
+  </script>
+
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -263,25 +280,8 @@
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/33f936a4b3.js" crossorigin="anonymous"></script>
 
-  <script>
-    $("#submit-form").submit((e) => {
-      e.preventDefault()
-      $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbyv2dGSDO7gZRqSiLHJ83ZT-29rxE8R6tVcYDQXwvYcCh5oxg5X8a2xJA/exec",
-        data: $("#submit-form").serialize(),
-        method: "post",
-        success: function (response) {
-          alert("Form submitted successfully")
-          window.location.reload()
 
-        },
-        error: function (err) {
-          alert("Something Error")
 
-        }
-      })
-    })
-  </script>
 </body>
 
 </html>
