@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
   <meta charset="UTF-8">
@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
     </nav>
   </header>
 
-  <section class="p-4 text-center" id="about">
+  <section class="text-center" id="about">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
@@ -39,14 +40,14 @@
         <div class="col-md-6 p-4">
           <h3>Hi, I'm</h3>
           <h1 class="text-warning">Vijin V J</h1>
-          <p>Final Year BCA Student</p>
+          <p>Final Year BCA Student || Coding Enthusiast || Aspiring Software Developer</p>
         </div>
       </div>
     </div>
 
   </section>
 
-  <section id="education" class="p-6">
+  <section id="education" class="p-3">
     <h3 class="text-warning text-center">Education</h3>
     <div class="container mt-5">
       <div class="main-timeline">
@@ -113,11 +114,11 @@
 
   <section id="skills">
     <h3 class="text-warning text-center">Skills</h3>
-    <div class="container mt-5">
+    <div class="container">
       <!--first row here-->
       <div class="row">
         <div class="col-md-4 text-center">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <i class="fab fa-html5 display-1 p-4"></i>
             <div class="card-body">
               <h4>HTML 5</h4>
@@ -125,7 +126,7 @@
           </div>
         </div>
         <div class="col-md-4 text-center">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <i class="fab fa-css3-alt display-1 p-4"></i>
             <div class="card-body">
               <h4>CSS 3</h4>
@@ -133,7 +134,7 @@
           </div>
         </div>
         <div class="col-md-4 text-center">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <i class="fab fa-bootstrap p-4 display-1"></i>
             <div class="card-body">
               <h4>Bootstrap 4</h4>
@@ -141,14 +142,14 @@
           </div>
         </div>
 
-        
 
-      
+
+
       </div>
       <!-- second row of skills -->
-      <div class="row mt-5">
+      <div class="row">
         <div class="col-md-4 text-center">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <i class="fab fa-java display-1 p-4"></i>
             <div class="card-body">
               <h4>Core Java</h4>
@@ -156,7 +157,7 @@
           </div>
         </div>
         <div class="col-md-4 text-center">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <i class="fab fa-php display-1 p-4"></i>
             <div class="card-body">
               <h4>PHP</h4>
@@ -165,7 +166,7 @@
         </div>
 
         <div class="col-md-4 text-center">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <i class="fas fa-database display-1 p-4"></i>
             <div class="card-body">
               <h4>MySQL</h4>
@@ -175,9 +176,9 @@
       </div>
       <!-- second row ends -->
       <!-- third row starts-->
-      <div class="row mt-5">
+      <div class="row">
         <div class="col-md-4 text-center">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <i class="fas fa-table display-1 p-4"></i>
             <div class="card-body">
               <h4>DSA</h4>
@@ -185,7 +186,7 @@
           </div>
         </div>
         <div class="col-md-4 text-center">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <i class="fab fa-git display-1 p-4"></i>
             <div class="card-body">
               <h4>Git</h4>
@@ -193,7 +194,7 @@
           </div>
         </div>
         <div class="col-md-4 text-center">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <i class="fab fa-github display-1 p-4"></i>
             <div class="card-body">
               <h4>GitHub</h4>
@@ -204,6 +205,51 @@
       </div>
       <!--third row ends-->
     </div>
+  </section>
+  <section id="certifications">
+    <h3 class="text-center text-warning mt-4">Certifications</h3>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="Images/Java-Certificate.jpg" alt="Java-Certificate" class="img-fluid" />
+        </div>
+        <div class="col-md-4">
+          <img src="Images/MySQL-Certificate.jpg" alt="MySQL-Certificate" class="img-fluid" />
+        </div>
+        <div class="col-md-4">
+          <img src="Images/DSA-Certificate.jpg" alt="Data Structures and Algorithm-Certificate" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h3 class="text-center text-warning mt-4">Contact</h3>
+    <div class="container text-white mt-4">
+      <form id="submit-form" action="">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPhoneNumber">Phone Number</label>
+            <input type="number" class="form-control" id="inputPhoneNumber">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail">E-mail</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="123@mail.com">
+        </div>
+        <div class="form-group">
+          <label for="inputMessage">Message</label>
+          <textarea class="form-control" style="height: 10rem;"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary" style="width: 20rem;">Submit</button>
+        </div>
+      </form>
+    </div>
+
   </section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -216,6 +262,26 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/33f936a4b3.js" crossorigin="anonymous"></script>
+
+  <script>
+    $("#submit-form").submit((e) => {
+      e.preventDefault()
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbyv2dGSDO7gZRqSiLHJ83ZT-29rxE8R6tVcYDQXwvYcCh5oxg5X8a2xJA/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function (response) {
+          alert("Form submitted successfully")
+          window.location.reload()
+
+        },
+        error: function (err) {
+          alert("Something Error")
+
+        }
+      })
+    })
+  </script>
 </body>
 
 </html>
